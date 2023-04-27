@@ -1,11 +1,13 @@
+import styled from "styled-components";
+
+const Wrapper = styled.div `
+    display: flex;
+    flex-direction: column;
+`
+
 const FlexColumn = ({ children }) => {
     return(
-        <div style={{
-            display: "flex",
-            flexDirection: "column"
-        }}>
-            {children}
-        </div>
+        <Wrapper>{children}</Wrapper>
     )
 }
 

@@ -1,11 +1,13 @@
+import styled from "styled-components";
+
+const Wrapper = styled.div `
+    display: flex;
+    flex-direction: row;
+`
+
 const FlexRow = ({ children }) => {
     return(
-        <div style={{
-            display: "flex",
-            flexDirection: "row"
-        }}>
-            {children}
-        </div>
+        <Wrapper>{children}</Wrapper>
     )
 }
 
