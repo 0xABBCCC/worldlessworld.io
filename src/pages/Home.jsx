@@ -8,6 +8,8 @@ import Sidebar from "../components/Navigation/Sidebar";
 // Images
 import treeNewsImg from "../assets/news.png";
 import treeNftsImg from "../assets/nft.png"
+import ProjectLayout from "../components/Home/ProjectsLayout";
+import Project from "../components/Home/Project";
 
 const jobList = [
     {
@@ -27,6 +29,16 @@ const jobList = [
         role: "Graphic Designer",
         what: "I used Artificial Intelligence to create 100 unique tree artworks, which were then edited using Photoshop.",
         how: "I generated 3000 different tree artworks with the goal of creating 10 themes, each with 5 trees that fit the theme well. Then, I made them look even better by carefully editing them with Adobe Photoshop."
+    }
+]
+
+const projectList = [
+    {
+        id: 1,
+        name: "WorldlessWorld.io",
+        language: "Javascript",
+        description: "This website :)",
+        url: "https://github.com/0xABBCCC/worldlessworld.io"
     }
 ]
 
@@ -51,6 +63,19 @@ const HomePage = () => {
                             ))
                         }
                     </CardLayout>
+                    <ProjectLayout>
+                        {
+                            projectList.map((project) => (
+                                <Project
+                                    key={project.id}
+                                    projectName={project.name}
+                                    projectLanguage={project.language}
+                                    projectDescription={project.description}
+                                    projectUrl={project.url}
+                                />
+                            ))
+                        }
+                    </ProjectLayout>
                 </MainBody>
             </FlexRow>
         </ApplicationBody>

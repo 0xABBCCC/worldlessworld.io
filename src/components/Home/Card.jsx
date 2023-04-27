@@ -21,7 +21,7 @@ const JobImg = styled.img `
     height: 65px;
     flex: 0 0 65px;
 
-    /* border-radius: 1rem; */
+    border-radius: 1rem;
 
     background-size: fill;
     background-repeat: no-repeat;

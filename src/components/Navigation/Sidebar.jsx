@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { useState } from "react";
+
 
 const Wrapper = styled.div `
     position: relative;
@@ -10,6 +11,8 @@ const Wrapper = styled.div `
     width: 250px;
 
     background-color: yellowgreen;
+
+    padding: 2rem;
 
     @media (max-width: 1280px) {
         display: ${props => props.visible ? "flex" : "none"};
@@ -26,6 +29,9 @@ const Wrapper = styled.div `
 
         overflow: auto;
         z-index: 50;
+
+        padding: 1rem;
+
     }
 `
 
