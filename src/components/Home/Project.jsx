@@ -4,7 +4,7 @@ import ExternalBtn from "../Layout/VisitBtn";
 const Wrapper = styled.div `
     position: relative;
     display: grid; 
-    grid-template-columns: 150px 150px 1fr;
+    grid-template-columns: 150px 150px 1fr 150px;
     border: thin solid red;
 
     @media (max-width: 1280px) {
@@ -22,9 +22,18 @@ const Box = styled.div `
         @media (max-width: 1280px) {
             border-left: none;
             border-right: none;
-            background-color: red;
+            border-top: thin solid red;
+            border-bottom: thin solid red;
         }
 
+    }
+
+    &:last-child {
+        border: none;
+
+        @media (max-width: 1280px) {
+            background-color: red;
+        }
     }
 `
 
@@ -36,13 +45,6 @@ const HeavyText = styled.div `
 const ThinText = styled.div `
     font-weight: 300;
     font-size: 16px;
-`
-
-const BtnWrapper = styled.div `
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    transform: translate(0, -50%);
 `
 
 const Project = ({ projectName, projectLanguage, projectDescription, projectUrl }) => {
@@ -62,9 +64,9 @@ const Project = ({ projectName, projectLanguage, projectDescription, projectUrl 
             </Box>
             {
                 projectUrl ? (
-                    <BtnWrapper>
+                    <Box>
                         <ExternalBtn linkTo={projectUrl}/>
-                    </BtnWrapper>
+                    </Box>
                 ) : (
                     <> </>
                 )

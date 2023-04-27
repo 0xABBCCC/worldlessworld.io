@@ -3,7 +3,7 @@ import {VscLinkExternal} from "react-icons/vsc"
 
 const Wrapper = styled.a `
     background-color: blue;
-    padding: 0.75rem 3rem;
+    padding: 0.5rem 2rem;
 
     &:hover {
         background-color: red;
@@ -11,11 +11,12 @@ const Wrapper = styled.a `
 
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.25rem;
 `
 
 const Text = styled.span `
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
 `
 
@@ -23,7 +24,7 @@ const ExternalBtn = ({ linkTo }) => {
     return(
         <Wrapper href={linkTo} target="_blank" rel="noreferrer">
             <Text>Visit</Text>
-            <VscLinkExternal style={{height: "16px", width: "16px"}}/>
+            <VscLinkExternal style={{height: "14px", width: "14px"}}/>
         </Wrapper>
     )
 }
