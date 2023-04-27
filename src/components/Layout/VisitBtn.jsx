@@ -13,6 +13,8 @@ const Wrapper = styled.a `
     align-items: center;
     justify-content: center;
     gap: 0.25rem;
+
+    border-radius: 0.25rem;
 `
 
 const Text = styled.span `

@@ -4,6 +4,14 @@ const Wrapper = styled.div `
     display: flex;
     flex-direction: column;
     background-color: aquamarine;
+
+    transition: background-color 100ms ease-in-out;
+
+    /* &:hover > div {
+        background-color: red;
+        transition: background-color 100ms ease-in;
+    } */
+
 `
 
 const Header = styled.div  `

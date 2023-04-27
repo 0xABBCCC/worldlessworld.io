@@ -10,6 +10,13 @@ const Wrapper = styled.div `
     @media (max-width: 1280px) {
         grid-template-columns: 1fr;
     }
+
+    transition: background-color 100ms ease-out;
+
+    &:hover > div {
+        background-color: red;
+        transition: background-color 100ms ease-in;
+    }
 `
 
 const Box = styled.div `
