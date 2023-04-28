@@ -14,6 +14,7 @@ import Project from "../components/Home/Project";
 const jobList = [
     {
         id: 1,
+        link: "https://news.treeofalpha.com/",
         icon: `${treeNewsImg}`,
         title: "Tree News",
         tag: "Developer Tools",
@@ -23,6 +24,7 @@ const jobList = [
     },
     {
         id: 2,
+        link: "https://opensea.io/collection/treeofalpha",
         icon: `${treeNftsImg}`,
         title: "Tree NFTs",
         tag: "Membership",
@@ -59,6 +61,7 @@ const HomePage = () => {
                                     jobRole={job.role}
                                     jobWhat={job.what}
                                     jobHow={job.how}
+                                    jobLink={job.link}
                                 />
                             ))
                         }

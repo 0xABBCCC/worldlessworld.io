@@ -15,6 +15,7 @@ const Wrapper = styled.a `
     gap: 0.25rem;
 
     border-radius: 0.25rem;
+    max-height: 32.5px;
 `
 
 const Text = styled.span `

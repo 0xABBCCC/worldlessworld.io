@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ExternalBtn from "../Layout/VisitBtn";
 
 const Wrapper = styled.div `
     display: flex;
@@ -17,11 +18,22 @@ const Wrapper = styled.div `
 const Header = styled.div  `
     padding: 1rem;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: thin solid red;
+
+    @media (max-width: 1280px) {
+        gap: 1rem;
+        flex-direction: column;
+    }
+`
+
+const HeaderContent = styled.div `
+    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
-
-    border-bottom: thin solid red;
 `
 
 const JobImg = styled.img `
@@ -68,15 +80,24 @@ const TextThin = styled.h2 `
     font-weight: 400;
 `
 
-const JobCard = ({ jobTitle, jobTag, jobIcon, jobRole, jobWhat, jobHow }) => {
+const JobCard = ({ jobTitle, jobTag, jobIcon, jobRole, jobWhat, jobHow, jobLink }) => {
     return(
         <Wrapper>
             <Header>
-                <JobImg src={jobIcon} />
-                <JobInfoWrapper>
-                    <TextHeavy>{jobTitle}</TextHeavy>
-                    <TextThin>{jobTag}</TextThin>
-                </JobInfoWrapper>
+                <HeaderContent>
+                    <JobImg src={jobIcon} />
+                    <JobInfoWrapper>
+                        <TextHeavy>{jobTitle}</TextHeavy>
+                        <TextThin>{jobTag}</TextThin>
+                    </JobInfoWrapper>
+                </HeaderContent>
+                {
+                    jobLink ? (
+                        <ExternalBtn linkTo={jobLink} /> 
+                    ) : (
+                        <></>
+                    )
+                }
             </Header>
             <Content>
                 {
