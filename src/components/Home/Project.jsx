@@ -5,7 +5,8 @@ const Wrapper = styled.div `
     position: relative;
     display: grid; 
     grid-template-columns: 150px 150px 1fr 150px;
-    border: thin solid red;
+    border: thin solid var(--gray-shade-100);
+    background-color: var(--gray-shade-800);
 
     @media (max-width: 1280px) {
         grid-template-columns: 1fr;
@@ -17,14 +18,14 @@ const Box = styled.div `
     padding: 1rem;
 
     &:nth-child(even) {
-        border-left: thin solid red;
-        border-right: thin solid red;
+        border-left: thin solid var(--gray-shade-100);
+        border-right: thin solid var(--gray-shade-100);
 
         @media (max-width: 1280px) {
             border-left: none;
             border-right: none;
-            border-top: thin solid red;
-            border-bottom: thin solid red;
+            border-top: thin solid var(--gray-shade-100);
+            border-bottom: thin solid var(--gray-shade-100);
         }
 
     }
@@ -33,7 +34,7 @@ const Box = styled.div `
         border: none;
 
         @media (max-width: 1280px) {
-            background-color: red;
+            background-color: var(--gray-shade-800);
         }
     }
 `

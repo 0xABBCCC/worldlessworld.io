@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-  --gray-tint-100: #4f4f4f;
-  --gray-tint-200: #626262;
-  --gray-tint-300: #767676;
-  --gray-tint-400: #898989;
-  --gray-tint-500: #9d9d9d;
-  --gray-tint-600: #b1b1b1;
-  --gray-tint-700: #c4c4c4;
-  --gray-tint-800: #d8d8d8;
-  --gray-tint-900: #ebebeb;
+  --gray-tint-100: #313131;
+  --gray-tint-200: #484848;
+  --gray-tint-300: #5f5f5f;
+  --gray-tint-400: #767676;
+  --gray-tint-500: #8d8d8d;
+  --gray-tint-600: #a3a3a3;
+  --gray-tint-700: #bababa;
+  --gray-tint-800: #d1d1d1;
+  --gray-tint-900: #e8e8e8;
   --gray-tint-1000: #ffffff;
 
-  --gray-shade-100: #353535;
-  --gray-shade-200: #2f2f2f;
-  --gray-shade-300: #292929;
-  --gray-shade-400: #232323;
-  --gray-shade-500: #1e1e1e;
-  --gray-shade-600: #181818;
-  --gray-shade-700: #121212;
-  --gray-shade-800: #0c0c0c;
-  --gray-shade-900: #060606;
-  --gray-shade-1000: #000000;
+  --gray-shade-100: #1a1a1a;
+  --gray-shade-200: #171717;
+  --gray-shade-300: #151515;
+  --gray-shade-400: #121212;
+  --gray-shade-500: #101010;
+  --gray-shade-600: #0d0d0d;
+  --gray-shade-700: #0a0a0a;
+  --gray-shade-800: #080808;
+  --gray-shade-900: #050505;
+  --gray-shade-1000: #030303;
 }
 
 ::-webkit-scrollbar {
@@ -44,8 +44,8 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
-  background-color: var(--gray-tint-1000);
-  color: var(--gray-shade-1000);
+  background-color: var(--gray-shade-100);
+  color: var(--gray-tint-800);
 }
 h1,
 h2,

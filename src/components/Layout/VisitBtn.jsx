@@ -2,11 +2,11 @@ import styled from "styled-components";
 import {VscLinkExternal} from "react-icons/vsc"
 
 const Wrapper = styled.a `
-    background-color: blue;
+    background-color: var(--gray-tint-100);
     padding: 0.5rem 2rem;
 
     &:hover {
-        background-color: red;
+        background-color: var(--gray-tint-200);
     }
 
     display: flex;
@@ -16,6 +16,10 @@ const Wrapper = styled.a `
 
     border-radius: 0.25rem;
     max-height: 32.5px;
+    
+    @media (max-width: 1280px) {
+        width: 100%;
+    }
 `
 
 const Text = styled.span `

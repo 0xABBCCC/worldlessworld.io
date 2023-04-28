@@ -37,7 +37,7 @@ const jobList = [
 const projectList = [
     {
         id: 1,
-        name: "WorldlessWorld.io",
+        name: "worldlessworld.io",
         language: "Javascript",
         description: "This website :)",
         url: "https://github.com/0xABBCCC/worldlessworld.io"

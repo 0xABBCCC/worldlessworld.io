@@ -4,7 +4,7 @@ import ExternalBtn from "../Layout/VisitBtn";
 const Wrapper = styled.div `
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+    background-color: var(--gray-shade-400);
 
     transition: background-color 100ms ease-in-out;
 
@@ -21,7 +21,8 @@ const Header = styled.div  `
     justify-content: space-between;
     align-items: center;
 
-    border-bottom: thin solid red;
+    border-bottom: thin solid var(--gray-shade-100);
+    background-color: var(--gray-shade-800);
 
     @media (max-width: 1280px) {
         gap: 1rem;
@@ -63,6 +64,7 @@ const Content = styled.div `
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    background-color: var(--gray-shade-400);
 `
 
 const ContentLayout = styled.div `

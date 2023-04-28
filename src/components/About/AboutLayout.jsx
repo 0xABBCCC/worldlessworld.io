@@ -32,8 +32,9 @@ const Paragraph = styled.p `
 
 const ParLink = styled.a `
     font-weight: 600;
-    text-decoration: underline dashed yellow 1px;
+    text-decoration: underline dashed var(--gray-tint-400) 1px;
     text-underline-offset: 4px;
+    color: var(--gray-tint-900);
 `
 
 const AboutLayout = () => {

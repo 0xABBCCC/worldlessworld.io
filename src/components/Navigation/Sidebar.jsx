@@ -2,9 +2,10 @@ import styled, { keyframes } from "styled-components";
 import { useState } from "react";
 import { HeavyText, ThinText } from "../Layout/SignatureText";
 import { NavLink, useLocation } from "react-router-dom";
-import { VscLibrary, VscAccount } from "react-icons/vsc";
+import { VscLibrary, VscAccount, VscMenu, VscClose } from "react-icons/vsc";
 import { BsFillPersonFill, BsFillMotherboardFill } from "react-icons/bs";
-import { FiGithub, FiTwitter} from "react-icons/fi"
+import { FiGithub, FiTwitter} from "react-icons/fi";
+import { TbGlobeOff } from "react-icons/tb";
 
 const Wrapper = styled.div `
     position: relative;
@@ -14,9 +15,10 @@ const Wrapper = styled.div `
     max-height: 100vh;
     width: 250px;
 
-    background-color: yellowgreen;
+    background-color: var(--gray-shade-600);
 
-    padding: 2rem;
+    padding: 2rem 0.625rem;
+    gap: 1rem;
 
     display: flex;
     flex-direction: column;
@@ -37,7 +39,7 @@ const Wrapper = styled.div `
         overflow: auto;
         z-index: 50;
 
-        padding: 1rem;
+        padding: 1rem 0.625rem;
     }
 `
 
@@ -46,6 +48,15 @@ const ToggleBtn = styled.button `
     position: fixed;
     top: 9999;
     right: 9999;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-tint-100);
+    color: var(--gray-tint-800);
+
+    height: 42px;
+    width: 42px;
 
     @media (max-width: 1280px) {
         top: 1rem;
@@ -54,14 +65,10 @@ const ToggleBtn = styled.button `
     }
 `
 
-const LogoWrapper = styled.div `
-    display: flex;
-    flex-direction: column;
-`
-
 const LinkWrapper = styled.div `
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 `
 
 const StyledLink = styled(NavLink)`
@@ -70,21 +77,62 @@ const StyledLink = styled(NavLink)`
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 0.5rem 0rem;
+    padding: 0.5rem;
     font-size: 16px;
+    font-weight: 200;
+    transition: border 250ms background-color 300ms;
+
+    border: thin solid var(--gray-tint-100);
+    border-radius: 0.25rem;
 
     &.active:hover {
-        background-color: none;
+        background-color: transparent;
     }
 
     &:hover {
-        background-color: purple;
-    }
+        background-color: var(--gray-shade-400);    }
 
     &.active {
-        background-color: red;
+        border: thin dashed var(--gray-tint-100);
+        background-color: var(--gray-shade-200);
+    }
+
+    @media (max-width: 1280px) {
+
+        background-color: transparent;
+
+        &.active:hover {
+            background-color: transparent;
+        }
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &.active {
+            border: thin dashed aqua;
+            background-color: transparent;
+        }
     }
 `;
+
+const FooterContainer = styled.div `
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--gray-shade-300);
+
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 1280px) {
+        padding: 1rem;
+    }
+`
 
 const Link = ({ to, children }) => {
     const location = useLocation();
@@ -97,22 +145,23 @@ const Link = ({ to, children }) => {
     );
 };
 
-const FooterContainer = styled.div `
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem;
-    border-top: thin solid blanchedalmond;
+const Icon = styled.div `
+    transform: rotate(180deg);
+    height: 16px;
+    width: 16px;
+`
 
+const Text = styled.h1 `
+    font-size: 16px;
+    font-weight: 300;
+`
+
+const LogoWrapper = styled.div `
     display: flex;
-    gap: 2rem;
+    flex-direction: row;
+    gap: 0.5rem;
     align-items: center;
     justify-content: center;
-
-    @media (max-width: 1280px) {
-        padding: 1rem;
-    }
 `
 
 const Sidebar = () => {
@@ -125,23 +174,26 @@ const Sidebar = () => {
     return (
         <>
             <ToggleBtn onClick={setVisibility}>
-                {isVisible ? (<span>Close</span>) : (<span>Open</span>)}
+                {isVisible ? (<VscClose style={{width: "24px", height: "24px"}}/>) : (<span><VscMenu style={{width: "24px", height: "24px"}}/></span>)}
             </ToggleBtn>
             <Wrapper visible={isVisible}>
                 <LogoWrapper>
-                    <ThinText>WorldLessWorld</ThinText>
+                    <Icon>
+                        <TbGlobeOff/>
+                    </Icon>
+                    <Text>Worldless World</Text>
                 </LogoWrapper>
                 <LinkWrapper>
                     <Link to="/">
-                        My Work
+                        /projects
                     </Link>
                     <Link to="/about">
-                        About me
+                        /about
                     </Link>
                 </LinkWrapper>
                 <FooterContainer>
-                    <a href="https://github.com/0xABBCCC/" target="_blank" rel="noreferrer"><FiGithub style={{ width: "24px", height: "24px" }} /></a>
-                    <a href="https://twitter.com/worldlessworld" target="_blank" rel="noreferrer"><FiTwitter style={{ width: "24px", height: "24px" }} /></a>
+                    <a href="https://github.com/0xABBCCC/" target="_blank" rel="noreferrer"><FiGithub style={{ width: "22px", height: "22px" }} /></a>
+                    <a href="https://twitter.com/worldlessworld" target="_blank" rel="noreferrer"><FiTwitter style={{ width: "22px", height: "22px" }} /></a>
                 </FooterContainer>
             </Wrapper>
         </>
