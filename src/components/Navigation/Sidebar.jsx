@@ -4,6 +4,7 @@ import { HeavyText, ThinText } from "../Layout/SignatureText";
 import { NavLink, useLocation } from "react-router-dom";
 import { VscLibrary, VscAccount } from "react-icons/vsc";
 import { BsFillPersonFill, BsFillMotherboardFill } from "react-icons/bs";
+import { FiGithub, FiTwitter} from "react-icons/fi"
 
 const Wrapper = styled.div `
     position: relative;
@@ -96,6 +97,24 @@ const Link = ({ to, children }) => {
     );
 };
 
+const FooterContainer = styled.div `
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    border-top: thin solid blanchedalmond;
+
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 1280px) {
+        padding: 1rem;
+    }
+`
+
 const Sidebar = () => {
     const [isVisible, setVisible] = useState(false);
 
@@ -114,12 +133,16 @@ const Sidebar = () => {
                 </LogoWrapper>
                 <LinkWrapper>
                     <Link to="/">
-                        Work
+                        My Work
                     </Link>
                     <Link to="/about">
-                        About
+                        About me
                     </Link>
                 </LinkWrapper>
+                <FooterContainer>
+                    <a href="https://github.com/0xABBCCC/" target="_blank" rel="noreferrer"><FiGithub style={{ width: "24px", height: "24px" }} /></a>
+                    <a href="https://twitter.com/worldlessworld" target="_blank" rel="noreferrer"><FiTwitter style={{ width: "24px", height: "24px" }} /></a>
+                </FooterContainer>
             </Wrapper>
         </>
     )

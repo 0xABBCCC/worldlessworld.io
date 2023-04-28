@@ -1,4 +1,5 @@
 
+import AboutLayout from "../components/About/AboutLayout";
 import ApplicationBody from "../components/Layout/ApplicationBody";
 import FlexRow from "../components/Layout/Flex/Row";
 import MainBody from "../components/Layout/Main/Body";
@@ -10,7 +11,7 @@ const AboutPage = () => {
             <FlexRow>
                 <Sidebar/>
                 <MainBody>
-                    About me page
+                    <AboutLayout/>
                 </MainBody>
             </FlexRow>
         </ApplicationBody>
