@@ -86,7 +86,7 @@ const StyledLink = styled(NavLink)`
     border-radius: 0.25rem;
 
     &.active:hover {
-        background-color: transparent;
+        background-color: none;
     }
 
     &:hover {
