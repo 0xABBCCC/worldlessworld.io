@@ -15,7 +15,7 @@ const Wrapper = styled.div `
 
     background-color: yellowgreen;
 
-    padding: 0.625rem;
+    padding: 2rem;
 
     display: flex;
     flex-direction: column;
@@ -35,6 +35,8 @@ const Wrapper = styled.div `
 
         overflow: auto;
         z-index: 50;
+
+        padding: 1rem;
     }
 `
 
@@ -45,8 +47,8 @@ const ToggleBtn = styled.button `
     right: 9999;
 
     @media (max-width: 1280px) {
-        top: 0.625rem;
-        right: 0.625rem;
+        top: 1rem;
+        right: 1rem;
         z-index: 99;
     }
 `
@@ -67,8 +69,7 @@ const StyledLink = styled(NavLink)`
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 0.5rem;
-
+    padding: 0.5rem 0rem;
     font-size: 16px;
 
     &.active:hover {
@@ -113,11 +114,9 @@ const Sidebar = () => {
                 </LogoWrapper>
                 <LinkWrapper>
                     <Link to="/">
-                        <BsFillMotherboardFill style={{width: "24px", height: "24px"}}/>
                         Work
                     </Link>
                     <Link to="/about">
-                        <BsFillPersonFill style={{width: "24px", height: "24px"}}/>
                         About
                     </Link>
                 </LinkWrapper>

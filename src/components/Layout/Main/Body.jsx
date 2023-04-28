@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 
     padding: 2rem;
 
-    animation: ${fadeIn} 750ms;
+    animation: ${fadeIn} 300ms;
 
     display: flex;
     flex-direction:column;
