@@ -41,6 +41,13 @@ const projectList = [
         language: "Javascript",
         description: "This website :)",
         url: "https://github.com/0xABBCCC/worldlessworld.io"
+    },
+    {
+        id: 2,
+        name: "FOMC bot",
+        language: "Javascript",
+        description: "Get the BPS and decide if you want to go long or short!",
+        url: "https://github.com/0xABBCCC/bot-fomc"
     }
 ]
 

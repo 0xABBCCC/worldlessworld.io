@@ -16,6 +16,7 @@ const Content = styled.div `
 const GridLayout = styled.div `
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 `
 
 const ProjectLayout = ({ children }) => {
