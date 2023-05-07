@@ -193,7 +193,6 @@ const Sidebar = () => {
                 </LinkWrapper>
                 <FooterContainer>
                     <a href="https://github.com/0xABBCCC/" target="_blank" rel="noreferrer"><FiGithub style={{ width: "22px", height: "22px" }} /></a>
-                    <a href="https://twitter.com/worldlessworld" target="_blank" rel="noreferrer"><FiTwitter style={{ width: "22px", height: "22px" }} /></a>
                 </FooterContainer>
             </Wrapper>
         </>
