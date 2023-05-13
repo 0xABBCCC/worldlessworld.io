@@ -19,7 +19,7 @@ const jobList = [
         title: "Tree News",
         tag: "Developer Tools",
         role: "UI/UX & Graphic Designer",
-        what: "I assisted @Tree_Of_Alpha in designing his free news site, and then I designed his exclusive Tree Terminal UI",
+        what: "I assisted @Tree_Of_Alpha in designing their free news site, and then I designed their exclusive Tree Terminal UI",
         how: "I used HTML/CSS and Javascript to create a design for both the free news site and Tree Terminal. After finishing the design, I gave the code to @Tree_Of_Alpha and they added it to their React.JS platform."
     },
     {
@@ -48,6 +48,13 @@ const projectList = [
         language: "Javascript",
         description: "Get the BPS and decide if you want to go long or short!",
         url: "https://github.com/0xABBCCC/bot-fomc"
+    },
+    {
+        id: 3,
+        name: "concept-1",
+        language: "HTML / CSS",
+        description: "Quick trading terminal designed for efficiency and scalability (ongoing)",
+        url: "https://github.com/0xABBCCC/concept-1"
     }
 ]
 
