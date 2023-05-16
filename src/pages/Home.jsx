@@ -55,6 +55,13 @@ const projectList = [
         language: "HTML / CSS",
         description: "Quick trading terminal designed for efficiency and scalability (ongoing)",
         url: "https://github.com/0xABBCCC/concept-1"
+    },
+    {
+        id: 4,
+        name: "sbar-concept-1",
+        language: "HTML / CSS",
+        description: "Sidebar layout concept skeleton with some hover effects",
+        url: "https://github.com/0xABBCCC/sidebar-concept-1"
     }
 ]
 
