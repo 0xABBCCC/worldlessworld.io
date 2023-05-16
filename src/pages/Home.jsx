@@ -62,6 +62,13 @@ const projectList = [
         language: "HTML / CSS",
         description: "Sidebar layout concept skeleton with some hover effects",
         url: "https://github.com/0xABBCCC/sidebar-concept-1"
+    },
+    {
+        id: 5,
+        name: "btn-concept-1",
+        language: "HTML / CSS",
+        description: "Colored buttons concept with hover effect",
+        url: "https://github.com/0xABBCCC/button-concept-1"
     }
 ]
 
