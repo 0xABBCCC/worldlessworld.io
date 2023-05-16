@@ -50,6 +50,7 @@ const AboutLayout = () => {
                         I'm a 19-year-old full stack developer with experience in React and NodeJS.
                         In addition to my programming skills, I'm also competent in drawing, using Photoshop for compositions, and web designing with a focus on UI/UX.
                         I've developed a good balance between technical expertise and design sense, which I believe could be valuable in a professional setting.
+                        Moreover, I have knowledge and experience in conducting UI/UX research and designing for both Web 2 and Web 3 projects.
                     </Paragraph>
                 </Content>
                 <Content>
