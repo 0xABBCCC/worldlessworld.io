@@ -28,6 +28,7 @@ const Content = styled.div `
 
 const Paragraph = styled.p `
     max-width: 600px;
+    line-height: 24px;
 `
 
 const ParLink = styled.a `
@@ -39,8 +40,6 @@ const ParLink = styled.a `
 
 const Highlight = styled.span `
     font-weight: 600;
-    /* text-decoration: underline dashed var(--gray-tint-400) 1px; */
-    /* text-underline-offset: 4px; */
     color: var(--gray-tint-900);
 `
 
@@ -54,10 +53,10 @@ const AboutLayout = () => {
                 <Content>
                     <ThinText>Who am I</ThinText>
                     <Paragraph>
-                        I'm a 19-year-old <HighLight>full stack developer</HighLight> with experience in React and NodeJS.
-                        In addition to my programming skills, I'm also competent in drawing, using <Highlight>Photoshop</Highlight> for compositions, and <Highlight>web designing</Highlight> with a focus on UI/UX.
+                        I'm a 19-year-old <Highlight>full stack developer</Highlight> with experience in <Highlight>React.js</Highlight> and <Highlight>Node.js</Highlight>.
+                        In addition to my programming skills, I'm also competent in drawing, using <Highlight>Photoshop</Highlight> for compositions, and <Highlight>web designing</Highlight> with a focus on <Highlight>UI/UX</Highlight> using tools such as <Highlight>Figma, ADOBE XD</Highlight> or plain <Highlight>HTML/CSS</Highlight>.
                         I've developed a good balance between technical expertise and design sense, which I believe could be valuable in a professional setting.
-                        Moreover, I have knowledge and experience in conducting UI/UX research and designing for both Web 2 and Web 3 projects.
+                        Moreover, I have knowledge and experience in conducting <Highlight>UI/UX research</Highlight> and designing for both Web 2 and Web 3 projects.
                     </Paragraph>
                 </Content>
                 <Content>
