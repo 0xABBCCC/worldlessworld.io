@@ -14,9 +14,13 @@ const Content = styled.div `
 `
 
 const GridLayout = styled.div `
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+
+    @media (max-width: 1280px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 const ProjectLayout = ({ children }) => {

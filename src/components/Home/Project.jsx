@@ -4,7 +4,8 @@ import ExternalBtn from "../Layout/VisitBtn";
 const Wrapper = styled.div `
     position: relative;
     display: grid; 
-    grid-template-columns: 150px 150px 1fr 150px;
+    /* grid-template-columns: 150px 150px 1fr 150px; */
+    grid-template-columns: 1fr;
     border: thin solid var(--gray-shade-100);
     background-color: var(--gray-shade-800);
 
@@ -17,9 +18,14 @@ const Wrapper = styled.div `
 const Box = styled.div `
     padding: 1rem;
 
-    &:nth-child(even) {
-        border-left: thin solid var(--gray-shade-100);
-        border-right: thin solid var(--gray-shade-100);
+    &:nth-child(odd) {
+        /* border-left: thin solid var(--gray-shade-100);
+        border-right: thin solid var(--gray-shade-100); */
+
+        border-left: none;
+        border-right: none;
+        border-top: thin solid var(--gray-shade-100);
+        border-bottom: thin solid var(--gray-shade-100);
 
         @media (max-width: 1280px) {
             border-left: none;
@@ -62,7 +68,7 @@ const Project = ({ projectName, projectLanguage, projectDescription, projectUrl 
             </Box>
             <Box>
                 <HeavyText>Description</HeavyText>
-                <ThinText>{projectDescription}</ThinText>
+                <ThinText style={{minHeight: "64px"}}>{projectDescription}</ThinText>
             </Box>
             {
                 projectUrl ? (
