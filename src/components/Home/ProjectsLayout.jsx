@@ -27,7 +27,7 @@ const ProjectLayout = ({ children }) => {
     return(
         <Wrapper>
             <Content>
-                <ThinText>Open-source Projects</ThinText>
+                <ThinText>Open-source Designs</ThinText>
                 <GridLayout>{children}</GridLayout>
             </Content>
         </Wrapper>

@@ -43,13 +43,6 @@ const projectList = [
         url: "https://github.com/0xABBCCC/worldlessworld.io"
     },
     {
-        id: 2,
-        name: "FOMC bot",
-        language: "Javascript",
-        description: "Get the BPS and decide if you want to go long or short!",
-        url: "https://github.com/0xABBCCC/bot-fomc"
-    },
-    {
         id: 3,
         name: "card-animation-1",
         language: "HTML / CSS",
@@ -76,13 +69,6 @@ const projectList = [
         language: "HTML / CSS",
         description: "Colored buttons concept with hover effect (Source code available)",
         url: "https://button-concept-1.vercel.app/"
-    },
-    {
-        id: 7,
-        name: "concept-1",
-        language: "HTML / CSS",
-        description: "Quick trading terminal designed for efficiency and scalability (ongoing)",
-        url: "https://github.com/0xABBCCC/concept-1"
     }
 ]
 
