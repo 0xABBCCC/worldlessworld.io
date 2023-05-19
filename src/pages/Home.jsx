@@ -51,38 +51,38 @@ const projectList = [
     },
     {
         id: 3,
-        name: "concept-1",
+        name: "card-animation-1",
         language: "HTML / CSS",
-        description: "Quick trading terminal designed for efficiency and scalability (ongoing)",
-        url: "https://github.com/0xABBCCC/concept-1"
+        description: "Simple card animation when clicked",
+        url: "https://card-animation-1-pi.vercel.app/"
     },
     {
         id: 4,
-        name: "sbar-concept-1",
-        language: "HTML / CSS",
-        description: "Sidebar layout concept skeleton with some hover effects (Source code available)",
-        url: "https://sidebar-concept-1.vercel.app/"
-    },
-    {
-        id: 5,
-        name: "btn-concept-1",
-        language: "HTML / CSS",
-        description: "Colored buttons concept with hover effect (Source code available)",
-        url: "https://button-concept-1.vercel.app/"
-    },
-    {
-        id: 6,
         name: "landing-concept-1",
         language: "HTML / CSS",
         description: "Amber colored theme landing page (Source code available)",
         url: "https://landing-page-1-nu.vercel.app/"
     },
     {
-        id: 7,
-        name: "card-animation-1",
+        id: 5,
+        name: "sbar-concept-1",
         language: "HTML / CSS",
-        description: "Simple card animation onClick.",
-        url: "https://github.com/0xABBCCC/card-animation-1"
+        description: "Sidebar layout concept skeleton with some hover effects (Source code available)",
+        url: "https://sidebar-concept-1.vercel.app/"
+    },
+    {
+        id: 6,
+        name: "btn-concept-1",
+        language: "HTML / CSS",
+        description: "Colored buttons concept with hover effect (Source code available)",
+        url: "https://button-concept-1.vercel.app/"
+    },
+    {
+        id: 7,
+        name: "concept-1",
+        language: "HTML / CSS",
+        description: "Quick trading terminal designed for efficiency and scalability (ongoing)",
+        url: "https://github.com/0xABBCCC/concept-1"
     }
 ]
 
