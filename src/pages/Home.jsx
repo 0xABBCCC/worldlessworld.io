@@ -76,6 +76,13 @@ const projectList = [
         language: "HTML / CSS",
         description: "Amber colored theme landing page (Source code available)",
         url: "https://landing-page-1-nu.vercel.app/"
+    },
+    {
+        id: 7,
+        name: "card-animation-1",
+        language: "HTML / CSS",
+        description: "Simple card animation onClick.",
+        url: "https://github.com/0xABBCCC/card-animation-1"
     }
 ]
 
