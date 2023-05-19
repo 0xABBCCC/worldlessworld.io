@@ -39,7 +39,7 @@ const Wrapper = styled.div `
         overflow: auto;
         z-index: 50;
 
-        padding: 1rem 0.625rem;
+        padding: 2rem 0.625rem;
     }
 `
 
@@ -54,6 +54,7 @@ const ToggleBtn = styled.button `
     justify-content: center;
     background-color: var(--gray-tint-100);
     color: var(--gray-tint-800);
+    border: thin solid var(--gray-tint-200);
 
     height: 42px;
     width: 42px;
