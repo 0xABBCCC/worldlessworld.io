@@ -43,29 +43,29 @@ const projectList = [
         url: "https://github.com/0xABBCCC/worldlessworld.io"
     },
     {
-        id: 3,
-        name: "card-animation-1",
-        language: "HTML / CSS",
-        description: "Simple card animation when clicked",
-        url: "https://card-animation-1-pi.vercel.app/"
-    },
-    {
-        id: 4,
-        name: "landing-concept-1",
+        id: 2,
+        name: "Landing Page 1",
         language: "HTML / CSS",
         description: "Amber colored theme landing page (Source code available)",
         url: "https://landing-page-1-nu.vercel.app/"
     },
     {
-        id: 5,
-        name: "sbar-concept-1",
+        id: 3,
+        name: "Card Animation 1",
+        language: "HTML / CSS",
+        description: "Simple card animation when clicked (Source code available)",
+        url: "https://card-animation-1-pi.vercel.app/"
+    },
+    {
+        id: 4,
+        name: "Sidebar Concept 1",
         language: "HTML / CSS",
         description: "Sidebar layout concept skeleton with some hover effects (Source code available)",
         url: "https://sidebar-concept-1.vercel.app/"
     },
     {
-        id: 6,
-        name: "btn-concept-1",
+        id: 5,
+        name: "Buttons concept 1",
         language: "HTML / CSS",
         description: "Colored buttons concept with hover effect (Source code available)",
         url: "https://button-concept-1.vercel.app/"
