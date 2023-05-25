@@ -44,27 +44,41 @@ const projectList = [
     },
     {
         id: 2,
+        name: "FOMC bot",
+        language: "Javascript",
+        description: "A bot that prints the latest FOMC data",
+        url: "https://github.com/0xABBCCC/bot-fomc"
+    },
+    {
+        id: 3,
+        name: "twt scraper",
+        language: "Javascript",
+        description: "Serves as the starting foundation for scraping twt profile content",
+        url: "https://github.com/0xABBCCC/twt-scp"
+    },
+    {
+        id: 4,
         name: "Landing Page 1",
         language: "HTML / CSS",
         description: "Amber colored theme landing page (Source code available)",
         url: "https://landing-page-1-nu.vercel.app/"
     },
     {
-        id: 3,
+        id: 5,
         name: "Card Animation 1",
         language: "HTML / CSS",
         description: "Simple card animation when clicked (Source code available)",
         url: "https://card-animation-1-pi.vercel.app/"
     },
     {
-        id: 4,
+        id: 6,
         name: "Sidebar Concept 1",
         language: "HTML / CSS",
         description: "Sidebar layout concept skeleton with some hover effects (Source code available)",
         url: "https://sidebar-concept-1.vercel.app/"
     },
     {
-        id: 5,
+        id: 7,
         name: "Buttons concept 1",
         language: "HTML / CSS",
         description: "Colored buttons concept with hover effect (Source code available)",
