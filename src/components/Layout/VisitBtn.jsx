@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {VscLinkExternal} from "react-icons/vsc"
 
 const Wrapper = styled.a `
+    position: relative;
     background-color: var(--gray-tint-100);
     padding: 0.5rem 2rem;
 
@@ -20,6 +21,8 @@ const Wrapper = styled.a `
     @media (max-width: 1280px) {
         width: 100%;
     }
+
+    z-index: 50;
 `
 
 const Text = styled.span `

@@ -7,7 +7,12 @@ import Sidebar from "../components/Navigation/Sidebar";
 
 // Images
 import treeNewsImg from "../assets/news.png";
-import treeNftsImg from "../assets/nft.png"
+import treeNftsImg from "../assets/nft.png";
+import gradientcard1 from "../assets/gradient_card_1.png";
+import landingpage1 from "../assets/landing_page_1.png";
+import mobileapp1 from "../assets/mobile_app_1.png";
+
+
 import ProjectLayout from "../components/Home/ProjectsLayout";
 import Project from "../components/Home/Project";
 
@@ -40,56 +45,75 @@ const projectList = [
         name: "worldlessworld.io",
         language: "Javascript",
         description: "This website :)",
-        url: "https://github.com/0xABBCCC/worldlessworld.io"
+        url: "https://github.com/0xABBCCC/worldlessworld.io",
+        isNew: false
     },
     {
         id: 24,
         name: "Chat App",
         language: "Javascript",
         description: "Realtime demo chat application with multiple chats coded in NextJS (Source code available)",
-        url: "https://chat-app-demo-rarb.vercel.app/"
+        url: "https://chat-app-demo-rarb.vercel.app/",
+        isNew: true
     },
     {
         id: 32,
         name: "Real-time News",
         language: "Javascript",
         description: "Just a simple application that connects to the Tree News websocket with an improved ui (doesn't store old news) (Source code available)",
-        url: "https://github.com/0xABBCCC/alpha-news"
+        url: "https://github.com/0xABBCCC/alpha-news",
+        isNew: false
     },
     {
-        id: 2,
-        name: "FOMC bot",
-        language: "Javascript",
-        description: "A bot that prints the latest FOMC data (Source code available)",
-        url: "https://github.com/0xABBCCC/bot-fomc"
+        id: 42,
+        name: "Mobile Concept 1",
+        language: "HTML / CSS",
+        description: "Light Blue Glass UI Mobile Concept",
+        url: "https://mobile-concept-1.vercel.app/",
+        image: `${mobileapp1}`,
+        isNew: true
+    },
+    {
+        id: 43,
+        name: "Gradient Card 1",
+        language: "HTML / CSS",
+        description: "Gradient, Glass UI",
+        url: "https://gradient-card-1.vercel.app/",
+        image: `${gradientcard1}`,
+        isNew: true
     },
     {
         id: 4,
         name: "Landing Page 1",
         language: "HTML / CSS",
         description: "Amber colored theme landing page (Source code available)",
-        url: "https://landing-page-1-nu.vercel.app/"
+        url: "https://landing-page-1-nu.vercel.app/",
+        image: `${landingpage1}`,
+        isNew: true
     },
     {
         id: 5,
         name: "Card Animation 1",
         language: "HTML / CSS",
         description: "Simple card animation when clicked (Source code available)",
-        url: "https://card-animation-1-pi.vercel.app/"
+        url: "https://card-animation-1-pi.vercel.app/",
+        isNew: false
     },
     {
         id: 6,
         name: "Sidebar Concept 1",
         language: "HTML / CSS",
         description: "Sidebar layout concept skeleton with some hover effects (Source code available)",
-        url: "https://sidebar-concept-1.vercel.app/"
+        url: "https://sidebar-concept-1.vercel.app/",
+        isNew: false,
     },
     {
         id: 7,
         name: "Buttons concept 1",
         language: "HTML / CSS",
         description: "Colored buttons concept with hover effect (Source code available)",
-        url: "https://button-concept-1.vercel.app/"
+        url: "https://button-concept-1.vercel.app/",
+        isNew: false
     }
 ]
 
@@ -124,6 +148,8 @@ const HomePage = () => {
                                     projectLanguage={project.language}
                                     projectDescription={project.description}
                                     projectUrl={project.url}
+                                    projectImgUrl={project.image}
+                                    isNew={project.isNew}
                                 />
                             ))
                         }

@@ -17,6 +17,7 @@ const Wrapper = styled.div `
 
 const Box = styled.div `
     padding: 1rem;
+    overflow: hidden;
 
     &:nth-child(odd) {
         /* border-left: thin solid var(--gray-shade-100);
@@ -55,9 +56,63 @@ const ThinText = styled.div `
     font-size: 16px;
 `
 
-const Project = ({ projectName, projectLanguage, projectDescription, projectUrl }) => {
+const BoxImg = styled.div `
+    height: 150px;
+    transform: scale(1.5);
+`
+
+const NewTag = styled.div `
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    padding: 8px 12px;
+    background-color: #c084fc;
+    color: #faf5ff;
+    border-radius: 4px;
+    font-weight: 800;
+
+    @media (max-width: 1280px) {
+        top: 0;
+        right: 0;
+    }
+
+    z-index: 10;
+
+`
+
+const NewBorder = styled.div `
+    position: absolute;
+    border: thin solid #c084fc;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+`
+
+const Project = ({ projectName, projectLanguage, projectDescription, projectUrl, projectImgUrl, isNew }) => {
     return(
         <Wrapper>
+            {
+                isNew ? (
+                    <>
+                        <NewTag>New!</NewTag>
+                        <NewBorder></NewBorder>
+                    </>
+                ) : (
+                    <></>
+                )
+            }
+            {
+                projectImgUrl ? (
+                    <Box>
+                        <BoxImg>
+                        <img src={projectImgUrl} style={{objectFit: "cover", width: "100%", height: "100%"}}/>
+                        </BoxImg>
+                    </Box>
+                ) : (
+                    <></>
+                )
+            }
             <Box>
                 <HeavyText>Name</HeavyText>
                 <ThinText>{projectName}</ThinText>
