@@ -56,14 +56,13 @@ const AboutLayout = () => {
                         I'm a 19-year-old <Highlight>full stack developer</Highlight> with experience in <Highlight>React.js</Highlight> and <Highlight>Node.js</Highlight>.
                         In addition to my programming skills, I'm also competent in drawing, using <Highlight>Photoshop</Highlight> for compositions, and <Highlight>web designing</Highlight> with a focus on <Highlight>UI/UX</Highlight> using tools such as <Highlight>Figma, ADOBE XD</Highlight> or plain <Highlight>HTML/CSS</Highlight>.
                         I've developed a good balance between technical expertise and design sense, which I believe could be valuable in a professional setting.
-                        Moreover, I have knowledge and experience in conducting <Highlight>UI/UX research</Highlight> and designing for both Web 2 and Web 3 projects.
                     </Paragraph>
                 </Content>
                 <Content>
                     <ThinText>Contact</ThinText>
                     <Paragraph>
                         If you're curious to learn more, I'd be thrilled to chat about how my skills can contribute to different projects or initiatives.
-                        The best way to reach me is through Twitter DMs - just <ParLink href="https://twitter.com/worldlessworld" target="_blank" rel="noreferrer">click here</ParLink> to visit my profile, and I'll get back to you as soon as I can!
+                        The best way to reach me is through email - just <ParLink href="mailto:maximeop53@gmail.com?subject=Hey!&body=Text" target="_blank" rel="noreferrer">click here</ParLink> to email me, and I'll get back to you as soon as I can!
                     </Paragraph>
                 </Content>
                 <Content>

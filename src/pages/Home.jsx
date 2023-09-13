@@ -43,18 +43,25 @@ const projectList = [
         url: "https://github.com/0xABBCCC/worldlessworld.io"
     },
     {
+        id: 24,
+        name: "Chat App",
+        language: "Javascript",
+        description: "Realtime demo chat application with multiple chats coded in NextJS (Source code available)",
+        url: "https://chat-app-demo-rarb.vercel.app/"
+    },
+    {
+        id: 32,
+        name: "Real-time News",
+        language: "Javascript",
+        description: "Just a simple application that connects to the Tree News websocket with an improved ui (doesn't store old news) (Source code available)",
+        url: "https://github.com/0xABBCCC/alpha-news"
+    },
+    {
         id: 2,
         name: "FOMC bot",
         language: "Javascript",
-        description: "A bot that prints the latest FOMC data",
+        description: "A bot that prints the latest FOMC data (Source code available)",
         url: "https://github.com/0xABBCCC/bot-fomc"
-    },
-    {
-        id: 3,
-        name: "twt scraper",
-        language: "Javascript",
-        description: "Serves as the starting foundation for scraping twt profile content",
-        url: "https://github.com/0xABBCCC/twt-scp"
     },
     {
         id: 4,
