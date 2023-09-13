@@ -68,7 +68,7 @@ const projectList = [
         id: 42,
         name: "Mobile Concept 1",
         language: "HTML / CSS",
-        description: "Light Blue Glass UI Mobile Concept",
+        description: "Light Blue Glass UI Mobile Concept (Source code available)",
         url: "https://mobile-concept-1.vercel.app/",
         image: `${mobileapp1}`,
         isNew: true
@@ -77,7 +77,7 @@ const projectList = [
         id: 43,
         name: "Gradient Card 1",
         language: "HTML / CSS",
-        description: "Gradient, Glass UI",
+        description: "Gradient, Glass UI (Source code available)",
         url: "https://gradient-card-1.vercel.app/",
         image: `${gradientcard1}`,
         isNew: true
