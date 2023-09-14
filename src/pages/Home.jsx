@@ -49,20 +49,20 @@ const projectList = [
         isNew: false
     },
     {
+        id: 245,
+        name: "Social Network",
+        language: "Javascript",
+        description: "An application that allows you to post images with captions, built using NextJS and MongoDB (Source code available)",
+        url: "https://next-mongo-social.vercel.app/",
+        isNew: true
+    },
+    {
         id: 24,
         name: "Chat App",
         language: "Javascript",
         description: "Realtime demo chat application with multiple chats coded in NextJS (Source code available)",
         url: "https://chat-app-demo-rarb.vercel.app/",
         isNew: true
-    },
-    {
-        id: 32,
-        name: "Real-time News",
-        language: "Javascript",
-        description: "Just a simple application that connects to the Tree News websocket with an improved ui (doesn't store old news) (Source code available)",
-        url: "https://github.com/0xABBCCC/alpha-news",
-        isNew: false
     },
     {
         id: 42,
@@ -90,6 +90,14 @@ const projectList = [
         url: "https://landing-page-1-nu.vercel.app/",
         image: `${landingpage1}`,
         isNew: true
+    },
+    {
+        id: 32,
+        name: "Real-time News",
+        language: "Javascript",
+        description: "Just a simple application that connects to the Tree News websocket with an improved ui (doesn't store old news) (Source code available)",
+        url: "https://github.com/0xABBCCC/alpha-news",
+        isNew: false
     },
     {
         id: 5,
