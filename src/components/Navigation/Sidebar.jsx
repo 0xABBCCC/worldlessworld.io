@@ -182,7 +182,7 @@ const Sidebar = () => {
                     <Icon>
                         <TbGlobeOff/>
                     </Icon>
-                    <Text>Worldless World</Text>
+                    <Text>Pan Stampolitis</Text>
                 </LogoWrapper>
                 <LinkWrapper>
                     <Link to="/">
