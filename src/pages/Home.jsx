@@ -41,12 +41,12 @@ const jobList = [
 
 const projectList = [
     {
-        id: 1,
-        name: "worldlessworld.io",
+        id: 2459,
+        name: "Instagram Pic Downloader",
         language: "Javascript",
-        description: "This website :)",
-        url: "https://github.com/0xABBCCC/worldlessworld.io",
-        isNew: false
+        description: "Simple script that allows you to download any instagram picture using only one URL (Source code available)",
+        url: "https://github.com/0xABBCCC/gram-pic-downloader/",
+        isNew: true
     },
     {
         id: 245,
@@ -97,6 +97,14 @@ const projectList = [
         language: "Javascript",
         description: "Just a simple application that connects to the Tree News websocket with an improved ui (doesn't store old news) (Source code available)",
         url: "https://github.com/0xABBCCC/alpha-news",
+        isNew: false
+    },
+    {
+        id: 1,
+        name: "worldlessworld.io",
+        language: "Javascript",
+        description: "This website :)",
+        url: "https://github.com/0xABBCCC/worldlessworld.io",
         isNew: false
     },
     {
