@@ -53,7 +53,7 @@ const AboutLayout = () => {
                 <Content>
                     <ThinText>Who am I</ThinText>
                     <Paragraph>
-                        I'm a 19-year-old <Highlight>full stack developer</Highlight> with experience in <Highlight>React.js</Highlight> and <Highlight>Node.js</Highlight>.
+                        I'm a 20-year-old <Highlight>full stack developer</Highlight> with experience in <Highlight>React.js/Next.JS</Highlight> and <Highlight>Node.js</Highlight>.
                         In addition to my programming skills, I'm also competent in drawing, using <Highlight>Photoshop</Highlight> for compositions, and <Highlight>web designing</Highlight> with a focus on <Highlight>UI/UX</Highlight> using tools such as <Highlight>Figma, ADOBE XD</Highlight> or plain <Highlight>HTML/CSS</Highlight>.
                         I've developed a good balance between technical expertise and design sense, which I believe could be valuable in a professional setting.
                     </Paragraph>
