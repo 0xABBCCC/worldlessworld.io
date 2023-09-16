@@ -37,7 +37,7 @@ const Wrapper = styled.div `
         width: 100vw;
 
         overflow: auto;
-        z-index: 50;
+        z-index: 55;
 
         padding: 2rem 0.625rem;
     }
