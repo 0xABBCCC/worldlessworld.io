@@ -58,10 +58,10 @@ const projectList = [
     },
     {
         id: 24,
-        name: "Chat App",
+        name: "NextJS x Stripe Payments Demo",
         language: "Javascript",
-        description: "Realtime demo chat application with multiple chats coded in NextJS (Source code available)",
-        url: "https://chat-app-demo-rarb.vercel.app/",
+        description: "Simple NextJS and Stripe payments demo for successful or failed payments. (Source code available)",
+        url: "https://github.com/0xABBCCC/restful-next-payments",
         isNew: true
     },
     {
@@ -90,6 +90,14 @@ const projectList = [
         url: "https://landing-page-1-nu.vercel.app/",
         image: `${landingpage1}`,
         isNew: true
+    },
+    {
+        id: 3259,
+        name: "Demo Chat App",
+        language: "Javascript",
+        description: "Simple Chat Application demo with multiple chats (Source code available)",
+        url: "https://github.com/0xABBCCC/chat-app-demo",
+        isNew: false
     },
     {
         id: 32,
