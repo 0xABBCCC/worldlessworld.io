@@ -46,7 +46,7 @@ const projectList = [
         language: "Javascript",
         description: "Simple script that allows you to download any instagram picture using only one URL (Source code available)",
         url: "https://github.com/0xABBCCC/gram-pic-downloader/",
-        isNew: true
+        isNew: false
     },
     {
         id: 245,
@@ -54,7 +54,7 @@ const projectList = [
         language: "Javascript",
         description: "An application that allows you to post images with captions, built using NextJS and MongoDB (Source code available)",
         url: "https://next-mongo-social.vercel.app/",
-        isNew: true
+        isNew: false
     },
     {
         id: 24,
@@ -62,7 +62,7 @@ const projectList = [
         language: "Javascript",
         description: "Simple NextJS and Stripe payments demo for successful or failed payments. (Source code available)",
         url: "https://github.com/0xABBCCC/restful-next-payments",
-        isNew: true
+        isNew: false
     },
     {
         id: 42,
@@ -71,7 +71,7 @@ const projectList = [
         description: "Light Blue Glass UI Mobile Concept (Source code available)",
         url: "https://mobile-concept-1.vercel.app/",
         image: `${mobileapp1}`,
-        isNew: true
+        isNew: false
     },
     {
         id: 43,
@@ -80,7 +80,7 @@ const projectList = [
         description: "Gradient, Glass UI (Source code available)",
         url: "https://gradient-card-1.vercel.app/",
         image: `${gradientcard1}`,
-        isNew: true
+        isNew: false
     },
     {
         id: 4,
@@ -89,7 +89,15 @@ const projectList = [
         description: "Amber colored theme landing page (Source code available)",
         url: "https://landing-page-1-nu.vercel.app/",
         image: `${landingpage1}`,
-        isNew: true
+        isNew: false
+    },
+    {
+        id: 325923,
+        name: "Next uploadthing",
+        language: "Typescript",
+        description: "Simple NextJS x uploadthing integration for uploading files (Source code available)",
+        url: "https://github.com/0xABBCCC/next-uploadthing",
+        isNew: false
     },
     {
         id: 3259,
