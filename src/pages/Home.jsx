@@ -92,6 +92,14 @@ const projectList = [
         isNew: false
     },
     {
+        id: 3259232,
+        name: "Next Auth Demo",
+        language: "Typescript",
+        description: "Simple NextJS demo application with Github Authentication (Source code available)",
+        url: "https://github.com/0xABBCCC/next-auth-gp",
+        isNew: false
+    },
+    {
         id: 325923,
         name: "Next uploadthing",
         language: "Typescript",
