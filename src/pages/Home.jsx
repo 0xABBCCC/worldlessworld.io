@@ -100,6 +100,14 @@ const projectList = [
         isNew: false
     },
     {
+        id: 325232,
+        name: "Next Supabase Demo",
+        language: "Typescript",
+        description: "Simple NextJS x Supabase application that reads channels from the database and renders them. (Includes pages for each Channel) (Source code available)",
+        url: "https://github.com/0xABBCCC/next-supabase-channels/",
+        isNew: false
+    },
+    {
         id: 325923,
         name: "Next uploadthing",
         language: "Typescript",
